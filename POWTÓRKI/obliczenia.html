@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl2.css">
+    <title>Stacja paliw</title>
+</head>
+<body>
+  
+   <header>
+<h1>Całodobowa stacja paliw</h1>
+</header>
+
+    <nav>
+        <a href="stacja.html">
+        <img src="home.png" alt=""> 
+        </a>
+        <a href="obliczenia.html">
+        <img src="znak.png"alt="">
+        </a>
+        <a href="kwerendy.txt">
+            Pobierz dokumenty
+        </a>
+    </nav>
+    <main>
+        <div id="left">
+            <h2>Orientacyjny koszt paliwa</h2>
+            Rodzaj paliwa (1-benzyna, 2-olej napędowy):<br>
+            <input type="number" id="fuelType"><br>
+            Ile litrów:<br>
+            <input type="number" id="volume"><br>
+            <button onclick="calc()">Oblicz</button>
+            <span id="result"></span>
+	 </div>
+
+        <div id="right">
+            <img src="samochod.png" alt="samochod">
+        </div>
+    </main>
+
+    <footer>
+        <p>Stronę opracował: 00000000000</p>
+    </footer>
+
+    <script>
+        function calc() {
+            let fuelType = document.getElementById("fuelType").value;
+            let volume = document.getElementById("volume").value;
+
+            let amount = 0;
+            if(fuelType == 1) {
+                amount = volume * 4;
+            }
+            if(fuelType == 2) {
+                amount = volume * 3.5;
+            }
+            let text = "koszt paliwa: " + amount +" zł";
+
+            document.getElementById("result").innerHTML = text;
+        }
+        
+    </script>
+    </body>
+</html>
+<!-- footer to stopka -->
+
+
+<!-- /*
+CTRL + / aby komentować
+link:css, aby stworzyć stylesheet css
+
+
+*/ -->
+
+<!--ZNACZNIKI
+w body umieszczamy 4 znaczniki:
+1. header 2. nav (HaNia)
+3.main (Ma)
+4. footer (Fi***)  - stopka
+
+
+--------------------------TABELA--------------------------------
+table>tr*3>td*3
+
+gdzie
+
+tutaj massz rozwiązania:
+https://ee-informatyk.pl/inf03-ee09/praktyka/INF.03-02-22.06-SG-rozwiazanie
+
+naucz się js i zmień nazwy wartości na pl
+ -->

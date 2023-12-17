@@ -1,0 +1,53 @@
+1. SELECT marka, rocznik FROM `samochody` WHERE kolor = 'niebieski';
+2. SELECT * FROM `samochody` where stan = 'bardzo dobry' AND (marka ='Toyota' OR marka = 'Opel');
+3. UPDATE `samochody` SET stan = 'dobry' WHERE rocznik < 2004;
+4. CREATE USER 'Jan'@'localhost' IDENTIFIED BY 'janKowalski1@';
+5. GRANT SELECT, INSERT, UPDATE ON `samochody`.`samochody` TO 'Jan'@'localhost';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Zapytanie 1: wybierające jedynie pola marka i rocznik z tabeli samochody dla samochodów koloru
+niebieskiego
+Zapytanie 2: zliczające ile jest samochodów marki Toyota lub Opel, których stan jest bardzo dobry
+Zapytanie 3: aktualizujące wartość pola stan na „dobry” w tabeli samochody dla samochodów
+starszych niż 2004 rok
+Zapytanie 4: tworzące użytkownika jan na localhost z hasłem janKowalski1@ (stwórz usera ręcznie, a potem skopiuj
+komendę, usuń usera komendą DROP USER jan@localhost; i wklej kod:
+CREATE USER 'janek'@'localhost' IDENTIFIED VIA mysql_native_password USING '***'
+
+zamieniając go na 
+
+CREATE USER 'janek'@'localhost' IDENTIFY BY 'janKowalski1@';
+
+)
+
+
+
+Zapytanie 5: nadające użytkownikowi jan prawo jedynie do wybierania, wstawiania i aktualizacji
+danych w tabeli samochody (phpmyadmin->konta userów->wejdz w usera->database->table->nadaj upr)
+
+
+//Tworzenie przezroczystego tła (jpg to png) in GIMP
+
+1. Różdżka 
+ - klikamy na białe elementy
+ - z SHIFT i + zaznaczamy całe tło
+ 2. Zaznaczenie - Odwróć
+ 3. CTRL C + CTRL V 
+ 4. Pojawia nam się nowa warstwa, klikamy na nią i w te dolne okienko na maxa po lewej, ukrywamy warstwę dolną
