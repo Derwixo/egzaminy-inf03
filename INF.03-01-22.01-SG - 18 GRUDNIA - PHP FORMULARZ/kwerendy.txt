@@ -1,0 +1,28 @@
+1. INSERT INTO `rezerwacje` (`id`, `nr_stolika`, `data_rez`, `liczba_osob`, `telefon`) VALUES (NULL, '1', '2017-07-04', '4', '111222333');
+2. SELECT nazwa, cena FROM dania WHERE typ=2;
+3. SELECT nazwa FROM dania WHERE cena < 15 AND typ = 3;
+4. UPDATE pracownicy SET stanowisko=4 WHERE stanowisko=3;
+
+
+1. WYPISZ:
+aktualizujące dane w tabeli pracownicy. Dla wszystkich pracowników, którzy 
+zatrudnieni są jako kelner, należy dokonać zmiany stanowiska na barman (kelner =3, barman =4) 
+
+UPDATE pracownicy SET stanowisko=4 WHERE stanowisko=3;
+
+
+1. RELACJE sprawdź jak się robi na podstawie jakiegoś egzaminu u "IT jest dla ludzi" oraz
+na podstawie kursu od mactree
+
+
+
+
+1. Pole wyboru z napisem: „Zgadzam się na przetwarzanie moich danych osobowych:
+<input type="checkbox" name="tos">
+
+2. Przyciski:
+a) Przycisk „WYCZYŚĆ”, po jego wciśnięciu formularz jest czyszczony
+b) Przycisk „REZERWUJ”, po jego wciśnięciu są wysyłane dane z formularza
+
+a) <input type="reset" value="WYCZYŚĆ">
+B) <input type="submit" value="REZERWUJ">
