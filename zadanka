@@ -42,7 +42,28 @@ a) <input type="checkbox" name="checkbox">
 b) <input type="reset" value="WYCZYŚĆ">
 c) <input type="submit" value="REZERWUJ">
 
+3. HTML:
+a) Podział strony na bloki: baner, panele lewy i prawy, dolny, stopka. Podział zrealizowany za pomocą 
+znaczników sekcji tak, aby układ bloków strony po uruchomieniu w przeglądarce, był zgodny 
+z Obrazem 2
 
+header> <!-- baner -->
+
+</header>
+
+<main>
+    <div id="top"> <!-- div do panelu lewego i prawego -->
+        <div id="left"></div> <!-- panel lewy-->
+        <div id="right"></div> <!-- panel prawy-->
+    </div>
+
+    <div id="bottom"></div>  <!-- panel dolny -->
+
+</main>
+
+<footer></footer> <!-- stopka -->
+</body>
+</html>
 
 
 
