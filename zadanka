@@ -1,0 +1,49 @@
+1. Skrypt połączenia z bazą:
+- Napisany w języku PHP, w pliku o nazwie rezerwacja.php
+- Jest uruchamiany po wypełnieniu formularza i wciśnięciu przycisku REZERWUJ. Nie jest wymagane 
+sprawdzenie poprawności danych wpisanych w formularz 
+- Wypisuje tekst „Dodano rezerwację do bazy”
+- Łączy się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych o nazwie 
+baza
+- Pobiera dane z formularza
+- Wysyła do bazy danych zapytanie wstawiające rekord do tabeli rezerwacje z danymi pobranymi 
+z formularza bez wypełnionego numeru stolika (zmodyfikowane zapytanie 1, patrz punkt „Operacje na 
+bazie danych")
+- Na końcu działania skrypt zamyka połączenie z serwerem.
+
+<?php
+
+echo "Dodano rezerwację do tablicy";
+
+
+//1. Deklaracja danych
+$phone = $_POST['phone'];
+$personCount = $_POST['personCount'];
+$date = $_POST['date'];
+//2. connect
+$db = mysqli_connect('localhost','root','','baza');
+//3. query
+$query = "INSERT INTO `rezerwacje` (`id`, `nr_stolika`, `data_rez`, `liczba_osob`, `telefon`) VALUES (NULL, '1', '$date', '$personCount', '$phone')";
+//4. mysqli_query = łączenie z bazą danych wysyłając zapytanie INSERT INTO
+mysqli_query($db,$query);
+//5. mysqli_close = zamknięcie połączenia z serwerem
+mysqli_close($db);
+
+?>
+
+2. POLA:
+a) Pole wyboru z napisem: „Zgadzam się na przetwarzanie moich danych osobowych”
+b) Przycisk „WYCZYŚĆ”, po jego wciśnięciu formularz jest czyszczony
+c) Przycisk „REZERWUJ”, po jego wciśnięciu są wysyłane dane z formularza
+
+a) <input type="checkbox" name="checkbox">
+   Wyrażam zgodę na przetwarzanie danych osobowych<br>
+
+b) <input type="reset" value="WYCZYŚĆ">
+c) <input type="submit" value="REZERWUJ">
+
+
+
+
+
+
