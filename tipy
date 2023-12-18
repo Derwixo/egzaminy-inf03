@@ -8,3 +8,11 @@ inaczej nie będzie działać
 Podział strony na bloki: baner, panele lewy i prawy, dolny, stopka. Podział zrealizowany za pomocą 
 znaczników sekcji tak, aby układ bloków strony po uruchomieniu w przeglądarce, był zgodny 
 z Obrazem 2
+
+
+2. Tak jak w przypadku https://youtu.be/RcODXSsaO1Q?si=O4Xx2LV5W_1MzHFG (INF.03-01-22.01-SG)
+   aby poprawnie nadać styl css należy w cssie umieścić display:flex w divie "top"
+
+div#top {
+    display: flex;
+}
