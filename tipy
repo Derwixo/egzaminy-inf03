@@ -1,0 +1,10 @@
+tipy:
+
+1. PODZIAŁ NA BLOKI
+JEŻELI MUSIMY ZROBIĆ DOLNY BLOK TO WPISUJEMY  div#bottom <div id=bottom>
+
+inaczej nie będzie działać
+
+Podział strony na bloki: baner, panele lewy i prawy, dolny, stopka. Podział zrealizowany za pomocą 
+znaczników sekcji tak, aby układ bloków strony po uruchomieniu w przeglądarce, był zgodny 
+z Obrazem 2
