@@ -1,0 +1,49 @@
+body {
+    font-family: Georgia;
+}
+
+main {
+    display: flex;
+}
+
+div#left {
+    background-color: maroon;
+    color:white;
+    height: 600px;
+    width: 30%;
+}
+
+div#right {
+    background-color: maroon;
+    color:white;
+    height: 600px;
+    width: 70%;
+    overflow: auto;
+}
+
+footer {
+    background-color: dimgray;
+    color:white;
+}
+
+div#right img,
+div#right ul {
+    float: left;
+}
+
+div#right p {
+    clear: both;
+}
+
+
+/* 
+paski przewijania pojawiające się
+gdy zawartość bloku nie mieści się:
+overflow:auto;
+
+kiedy mamy taką sytuaccję jak w przypadku
+tego arkusza to do maina
+wklepujemy zawsze
+display: flex'
+
+*/

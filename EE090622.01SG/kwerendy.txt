@@ -1,0 +1,13 @@
+1. CREATE USER 'Agnieszka'@'%' IDENTIFIED BY 'haslo4';
+2. SELECT AVG(rocznik) FROM samochody WHERE marka='Opel';
+3. SELECT * FROM `wypozyczenia` LEFT JOIN samochody ON wypozyczenia.samochody_id = samochody_id LEFT JOIN klienci ON wypozyczenia.klienci_id = klienci_id;
+4. ALTER TABLE `klasa` drop `cena`;
+
+
+‒ Zapytanie 1: tworzące użytkownika Agnieszka z hasłem haslo4
+‒ Zapytanie 2: liczące w tabeli samochody średnią arytmetyczną roczników samochodów, których
+marką jest opel
+‒ Zapytanie 3: wybierające jedynie nazwy marek samochodów i imiona klientów z nimi powiązane
+za pomocą tabeli wypozyczenia. Zapytanie wykorzystuje relację wiele do wielu pomiędzy trzema
+tabelami
+‒ Zapytanie 4: usuwające kolumnę cena z tabeli klasa
