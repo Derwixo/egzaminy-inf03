@@ -8,3 +8,6 @@ w których w polu opis występuje ciąg znaków: „Leia”:
    INNER JOIN zdjecia ON zdjecia.id = wycieczki.zdjecia_id 
    WHERE wycieczki.cena > 1000;
 https://tiny.pl/wn94g
+
+3. wybierz pola: imion, numerów PESEL i wieku osób w wieku równym 18 lub 30 lat
+   SELECT imie, pesel, wiek FROM dane WHERE wiek IN (18,30)
