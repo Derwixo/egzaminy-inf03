@@ -1,0 +1,65 @@
+body {
+    font-family: Verdana;
+}
+
+header, footer {
+    background-color: rgb(205, 92, 92);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+div#left, div#right {
+    background-color: rgb(250, 235, 215);
+    width: 25%;
+    height: 500px;
+    float: left;
+    /* to są bloki układdane obok siebie, więc należy użyć znacznika float:left */
+}
+div#center {
+    background-color: rgb(250, 235, 215);
+    width: 50%;
+    height: 500px;
+    float: left;
+    /* to są bloki układdane obok siebie, więc należy użyć znacznika float:left */
+}
+
+div#dane {
+    background-color: rgb(210, 180, 140);
+    color: white;
+    clear: both;
+    /* ten natomiast blok już jest układany pod tamtymi, więc czyścimy argument */
+}
+
+h2 {
+    text-align: center;
+}
+
+h2::first-letter {
+    font-size: 150%;
+}
+
+img {
+    height: 100px;
+    padding: 7px;
+}
+
+img:hover {
+    background-color: rgb(210, 180, 140);
+}
+
+
+
+
+
+/* 
+jak layout się źle układa to spamuj float:left ;)
+
+1. Dla pierwszej litery nagłówka drugiego stopnia (pseudoelement): rozmiar czcionki 150%
+h2::first-letter {
+    font-size: 150%;
+}
+
+2. W momencie, gdy kursor znajduje się na obrazie, styl obrazu zmienia się na: kolor tła RGB 210, 180, 140
+img:hover 
+
+*/

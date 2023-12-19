@@ -1,0 +1,5 @@
+1. SELECT id, dataWyjazdu, cel, cena FROM wycieczki WHERE dostepna = 1;
+Zapytanie 2: wybierające jedynie pola nazwaPliku i podpis z tabeli zdjecia, sortując je rosnąco alfabetycznie według kolumny podpis:
+2. SELECT nazwaPliku, podpis FROM zdjecia ORDER BY podpis ASC;
+3. SELECT nazwaPliku, cel FROM `wycieczki` INNER JOIN zdjecia ON zdjecia.id = wycieczki.zdjecia_id WHERE wycieczki.cena > 1000
+4. ALTER TABLE `wycieczki` ADD `dataPrzyjazdu` DATE NULL AFTER `dataWyjazdu`;
