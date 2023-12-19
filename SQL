@@ -2,3 +2,9 @@
 sortując je rosnąco alfabetycznie według kolumny podpis:
 
 1. SELECT nazwaPliku, podpis FROM zdjecia ORDER BY podpis ASC;
+2. INNER JOIN - wybierające nazwę z tabeli produkty i odpowiadającą mu nazwę z tabeli rodzaje dla wierszy, 
+w których w polu opis występuje ciąg znaków: „Leia”:
+   SELECT nazwaPliku, cel FROM wycieczki 
+   INNER JOIN zdjecia ON zdjecia.id = wycieczki.zdjecia_id 
+   WHERE wycieczki.cena > 1000;
+https://tiny.pl/wn94g
