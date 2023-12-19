@@ -1,0 +1,4 @@
+1. Zapytanie wybierające jedynie pola nazwaPliku i podpis z tabeli zdjecia, 
+sortując je rosnąco alfabetycznie według kolumny podpis:
+
+1. SELECT nazwaPliku, podpis FROM zdjecia ORDER BY podpis ASC;
