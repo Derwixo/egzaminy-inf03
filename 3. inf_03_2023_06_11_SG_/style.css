@@ -1,0 +1,46 @@
+*{
+    font-family: Tahoma;
+}
+#header, #footer {
+    background: saddlebrown;
+    color: white;
+    padding: 3px;
+    text-align: center;
+    clear: both;
+}
+#left, #right{
+    background: Tan;
+    height: 400px;
+    width: 40%;
+    float: left;
+}
+#center{
+    background: wheat;
+    height: 400px;
+    width: 20%;
+    float: left;
+}
+img{
+    margin-right: 20px;
+    float: right;
+}
+h4{
+    text-align: center;
+}
+input{
+    margin: 5px;
+}
+li:hover{
+    background: sienna;
+    color: white;
+}
+
+/* 
+Po najechaniu na element listy, jego tło jest zmieniane na Sienna a kolor czcionki na biały
+
+li:hover{
+    background: sienna;
+    color: white;
+}
+
+*/
