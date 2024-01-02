@@ -1,0 +1,1 @@
+1. SELECT imie, nazwisko FROM `autorzy` ORDER BY nazwisko ASC;

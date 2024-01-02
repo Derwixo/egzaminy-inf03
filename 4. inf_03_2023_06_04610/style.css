@@ -1,0 +1,75 @@
+*{
+    font-family: Verdana;
+}
+
+header, footer {
+    background-color: #004D40;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+div#lewy {
+  background-color: #80CBC4;  
+  color: white;
+  height: 500px;
+  width: 30%;
+  float: left;
+}
+
+div#srodkowy {
+    background-color: #E0F2F1;
+    height: 500px;
+    width: 30%;
+    text-align: center;
+    float: left;
+}
+
+div#prawy1, div#prawy2 {
+height: 250px;
+width: 40%;
+}
+
+div#prawy1 {
+background-color: #E0F2F1;
+float:left;
+}
+
+div#prawy2 {
+background-color: #B2DFDB;
+float:left;
+}
+
+h3 {
+    text-align: center;
+}
+
+img {
+    padding: 5px;
+    height: 150px;
+    border: 1px dotted #004D40;
+    border-radius: 5px;
+}
+
+input{
+    margin: 10px;
+}
+
+
+/* 
+Dla selektora obrazu: marginesy wewnętrzne 5 px, wysokość 150 px, obramowanie linią kropkowaną
+o grubości 1 px i kolorze #004D40 zaokrągloną na rogach o 5 px
+− Dla selektora pola edycyjnego: marginesy zewnętrzne 10 px
+img {
+    padding: 5px;
+    height: 150px;
+    border: 1px dotted #004D40;
+    border-radius: 5px;
+}
+
+
+input{
+    margin: 10px;
+}
+*/
