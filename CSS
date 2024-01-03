@@ -25,4 +25,24 @@ li:hover {
 }
 
 
+4. file:///C:/xampp/htdocs/cwiczenia%20do%20egzaminu/5.%20d/rozwi%C4%85zanie/INF.03-01-23.01-SG.pdf
+
+1. DLA SELEKTORA TABELI:
+- obramowanie linią ciągła o szerokości 1 px i kolorze DimGray, szerokość 80%, marginesy zewnętrzne automatycznie wyliczan eprzez przeglądarke obramowanie pol w jedna linie
+table {
+    border: 1px solid dimgray;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+dla selektora tabeli
+
+tr, td {
+    border: 1px solid dimgray;
+    border-collapse: collapse;
+}
+
+
 
