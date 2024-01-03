@@ -18,5 +18,25 @@ div#top {
 }
 
 
-3. kod pisany w .html z jsem to to używaj znaczników div class, inaczej się layout rozjedzie
+3. JAKIE ZNACZNIKI UŻYWAĆ:
+a) IF JS = div class .
+<div class="prawy">
+</div>
+
+wtedy w css odwołujesz się . 
+np. .prawy, .lewy
+
+b) IF PHP = div id #
+<div id="lewy">
+</div>
+
+div id w css odwołuje się #
+np. #lewy
+
+kod pisany w .html z jsem to to używaj znaczników div class, inaczej się layout rozjedzie
    w przypadku PHP <div id=""></div>
+
+
+MOŻESZ MORDKI TAK NAPRAWDĘ UŻYWAĆ div id JAK I ZARÓWNO div class Z TYM, ŻE
+DIV ID = .prawy
+DIV CLASS = div#prawy
