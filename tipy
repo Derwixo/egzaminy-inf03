@@ -16,3 +16,7 @@ z Obrazem 2
 div#top {
     display: flex;
 }
+
+
+3. kod pisany w .html z jsem to to używaj znaczników div class, inaczej się layout rozjedzie
+   w przypadku PHP <div id=""></div>
