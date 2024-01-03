@@ -39,7 +39,7 @@ a) punktowana (nieuporzadkowana = nienumerowana)
   <li> <a href="mieszkańcy.html">MMieszamy </a> </li>
 </ul>
 
-b) punktowana (uporządkowana = numerowana)
+b) numerowana (uporządkowana = numerowana)
   - odnośnik o treści ,,Wyceniamy'' prowadzący do strony cena.html
 
 <ol>
@@ -48,4 +48,33 @@ b) punktowana (uporządkowana = numerowana)
 
 //ul - nienumerowana (nieuporządkowana)
 //ol - numerowana (uporządkowana)
+
+
+
+
+3. Pikselizacja w gimpie
+filtry->rozmycie->pikselizuj
+
+
+4. CSS
+
+a) Dla selektora tabeli: obramowanie linią ciąłą o szerokości 1px i kolorze DimGray | obramowanie połączone w jedną linię
+
+   table {
+      border: 1px solid dimgray;
+      border-collapse: collapse;
+}
+
+b) Dla selektora tabeli (td-table data-kolumna/komórka, tr-table row-wiersz) 
+
+c) Gdy kursor myszy znajdzie się na komórce tabeli jej kolor tła zamienia się na SteelBlue
+
+td:hover {
+   background: steelblue;
+|
+
+//border-collapse - obramowanie połączone w jedną linię
+
+
+
 
