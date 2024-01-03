@@ -1,0 +1,51 @@
+1. SELECT cena, pojemnosc FROM farby WHERE kolor = 'czerwony';
+2. SELECT kolor, cena/pojemnosc AS 'cena jednostkowa' FROM `farby`;
+3. SELECT farby.kolor, malowanie.liczba_puszek FROM farby, malowanie WHERE malowanie.id_pomieszczenia=3 AND malowanie.id_farby=farby.id_farby;
+4. CREATE VIEW pomieszczenie3 AS SELECT malowanie.id_sciany, malowanie.id_farby, malowanie.liczba_puszek FROM malowanie WHERE malowanie.id_pomieszczenia=1;
+
+
+tr - table row - wiersz tabeli
+td - table data - kolumna tabeli
+
+1. Stwórz tabelę o trzech wierszach | tr - table row
+   i trzech kolumnach | td - table data
+
+<table>tr*3>td*3
+
+//pierwszy wiersz zawiera komórki nagłówkowe, 1 i 2 komórki(kolumny) są połaczone
+<table>
+  <tr>
+    <td colspan="2">Składowe</td>
+    <td colspan="2">Wynik</td>
+  </tr>
+  <tr>
+    <td>żółty</td>
+    <td>kolumna</td>
+    <td>kolumna</td>
+  </tr>
+  <tr>
+    <td>czerwony</td>
+    <td>kolumna</td>
+    <td>kolumna</td>
+  </tr>
+</table>
+
+
+2. Listy
+a) punktowana (nieuporzadkowana = nienumerowana)
+  - odnośnik o treści ,,Mieszamy'' prowadzący do strony mieszkańcy.html
+
+<ul>
+  <li> <a href="mieszkańcy.html">MMieszamy </a> </li>
+</ul>
+
+b) punktowana (uporządkowana = numerowana)
+  - odnośnik o treści ,,Wyceniamy'' prowadzący do strony cena.html
+
+<ol>
+  <li> <a href="cena.html">Wyceniamy </a> </li>
+</ol>
+
+//ul - nienumerowana (nieuporządkowana)
+//ol - numerowana (uporządkowana)
+
