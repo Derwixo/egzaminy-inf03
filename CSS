@@ -7,3 +7,22 @@ img {
   border: dotted 1px #004D40;
   border-radius: 5px;
 }
+
+2. 
+a) Dla selektora obrazu: margines zewnętrzny prawy 20 px, 
+b) obrazek musi być po prawej stronie
+
+img {
+a)  margin-right: 20px;
+b)  float:right;
+}
+
+3. Po najechaniu na element listy, jego tło jest zmieniane na Sienna a kolor czcionki na biały
+
+li:hover {
+  background-color: Sienna;
+  color: white;
+}
+
+
+
