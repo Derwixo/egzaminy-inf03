@@ -1,0 +1,9 @@
+1. Dla selektora obrazu: marginesy wewnętrzne 5 px, wysokość 150 px, obramowanie linią kropkowaną
+o grubości 1 px i kolorze #004D40 zaokrągloną na rogach o 5 px
+
+img {
+  padding: 5px;
+  height: 150px;
+  border: dotted 1px #004D40;
+  border-radius: 5px;
+}
