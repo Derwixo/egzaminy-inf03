@@ -1,0 +1,48 @@
+tr - table row - wiersz tabeli
+td - table data - kolumna tabeli
+
+1. Stwórz tabelę o trzech wierszach | tr - table row
+   i trzech kolumnach | td - table data
+
+<table>tr*3>td*3
+
+//pierwszy wiersz zawiera komórki nagłówkowe, 1 i 2 komórki(kolumny) są połaczone
+<table>
+  <tr>
+    <td colspan="2">Składowe</td>
+    <td colspan="2">Wynik</td>
+  </tr>
+  <tr>
+    <td>żółty</td>
+    <td>kolumna</td>
+    <td>kolumna</td>
+  </tr>
+  <tr>
+    <td>czerwony</td>
+    <td>kolumna</td>
+    <td>kolumna</td>
+  </tr>
+</table>
+
+
+2. Listy
+a) punktowana (nieuporzadkowana = nienumerowana)
+  - odnośnik o treści ,,Mieszamy'' prowadzący do strony mieszkańcy.html
+
+<ul>
+  <li> <a href="mieszkańcy.html">MMieszamy </a> </li>
+</ul>
+
+b) numerowana (uporządkowana = numerowana)
+  - odnośnik o treści ,,Wyceniamy'' prowadzący do strony cena.html
+
+<ol>
+  <li> <a href="cena.html">Wyceniamy </a> </li>
+</ol>
+
+//ul - nienumerowana (nieuporządkowana)
+//ol - numerowana (uporządkowana)
+
+
+
+
