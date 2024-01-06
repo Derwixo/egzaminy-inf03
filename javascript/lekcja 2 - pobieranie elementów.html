@@ -61,7 +61,31 @@
 
    }
 
-   
+//wyżej html
+<p id="wynik"></p>
+
+
+
+function(){
+
+  let rodzaj = document.getelementbyid("rodzaj").value;
+
+  let ilosc = document.getelementbyid("ilosc").value;
+
+  let koszt = 0;
+
+
+   if (rodzaj == 1){
+       koszt = ilosc * 4;}
+
+   if (rodzaj == 2){
+       koszt = ilosc * 3.5}
+
+   if (rodzaj != 1 && rodzaj != 2){
+      koszt = 0;}
+
+ document.getelementbyid("wynik").innerHTML = "koszt paliwa: " + "koszt" + "zł";
+   }
 
 </script>
 </html>
