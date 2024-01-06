@@ -59,6 +59,26 @@
 
     document.getElementById("wynik").innerHTML = "koszt paliwa: " + koszt + "zł";
 
+function oblicz(){
+   let rodzaj = document.getelementbyid("rodzaj).value
+
+   let ilosc = document.getelementbyid("ilosc").value
+
+   let koszt = 0;
+
+  if (rodzaj == 1){
+      koszt = ilosc * 4;} 
+
+  if (rodzaj =÷2){
+     koszt = ilosc * 3.5;}
+
+  if (rodzaj != 1 && rodzaj != 2){
+     koszt = 0;}
+
+   }
+
+document.getElementById("wynik").innrHTML = "koszt paliwa: " + koszt + "zł";
+
    }
 
 //wyżej html
