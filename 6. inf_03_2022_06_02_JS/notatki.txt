@@ -1,0 +1,5 @@
+
+
+//SQL
+1. zliczające ile jest samochodów marki Toyota lub Opel, których stan jest bardzo dobry
+SELECT count(*) FROM samochody WHERE `marka` IN('Toyota','Opel') AND `stan` LIKE 'bardzo dobry';
