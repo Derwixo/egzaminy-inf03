@@ -3,3 +3,15 @@
 a następnie w pustym obszarze zdublować stos książek zgodnie z obrazem 3b
 
   obraz->wymiary płótna 
+
+
+2. Pikselizacja
+Filtry -> Rozmycie -> Pikselizuj
+
+
+3. Zamiana z JPG na PNG
+
+a) zaznacz różdżką obszary poza autem (z przytrzymanym shiftem)
+b) zaznaczanie -> odwróć 
+c) stwórz nową warstwę i na nią nałóż ten efekt co jest na panelu dolnym zaznaczony na zielono
+d) ukryj starą warstwę
