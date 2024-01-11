@@ -1,0 +1,12 @@
+NAJWAŻNIEJSZE PARAMETRY
+
+1. onClick
+- <button> id="laptop" onClick="laptop()">LAPTOP</button>
+- <input type="button" value="OBLICZ" onclick="oblicz()">
+
+2. id
+- <input type="number" name="ilosc" id="ilosc" value="10>
+
+<p id="wynik"</p>
+
+math.abs(math.ceil( powierzchnia / 4))

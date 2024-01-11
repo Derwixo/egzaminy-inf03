@@ -1,0 +1,62 @@
+//1. Działania arytmetyczne
+
+ - wypisz na ekranie działanie 10*10
+ (deklaracja zmiennej liczba = 10, następnie liczba = liczba * 10;)
+ console.log(liczba);
+
+
+ //2. Egzamin inf_03_2022_06_02_JS
+
+
+
+//3. Modyfikacja atrybutów 
+
+W zależności od naciśniętego przycisku, ustaw dla zdjęcia o id nagroda:
+- gdy przycisk laptop, obraz laptop.jpg oraz tekst alternatywny "laptop"
+- gdy przycisk iphone, obraz iphone.jpg oraz tekst alternatywny "iphone"
+- gdy przycisk lodówka, obraz lodówka.jpg oraz tekst alternatywny "lodówka"
+
+
+
+a. html
+- img src="" alt="" id="nagroda">
+- button onClick="laptop()"
+
+b. js
+document.src
+document.alt 
+
+
+1. HTML 
+a. tworzysz img z id "nagroda"
+b. Tworzysz buttony z id odpowiadającym przedmiotowi z atrybutem onclick
+
+2. JS 
+a. tworzysz funkcje z nazwami z atrybutu "onclick" np. iphone, laptop, lodówka 
+b. w nawiasie w document.getelement(...) wpisujesz id z img 
+b. dodajesz atrybuty .src i .alt
+  <script>
+
+            function oblicz(){
+
+                let rodzaj = document.getElementById("rodzaj").value ;
+                let ilosc = document.getElementById("ilosc").value;
+                let koszt = 0;
+
+                if (rodzaj == 1){
+                    koszt = ilosc * 4;
+                }
+                if (rodzaj ==2){
+                    koszt = ilosc * 3.5;
+                }
+                if (rodzaj != 1 && rodzaj != 2){
+                    koszt = 0;
+                }
+            }
+
+
+            document.getElementById("wynik").innerHTML = "koszt paliwa: " + koszt + "zł";
+
+    </script>
+    <input type="button" value="OBLICZ" onclick="oblicz()">
+        <p id="wynik"></p>

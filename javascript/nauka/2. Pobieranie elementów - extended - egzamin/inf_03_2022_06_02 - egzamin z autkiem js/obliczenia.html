@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacja paliw</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <header>
+        <h1>Całodobowa stacja paliw</h1>
+    </header>
+    <div id="menu">
+        <a href="stacja.html"> <img src="home.png" alt=""></a>
+        <a href="obliczenia.html"> <img src="znak.png" alt=""></a>
+        <a href="kwerendy.txt">Pobierz dokumenty</a>
+    </div>
+
+    <div id="lewy">
+        <h2>Orientacyjny koszt paliwa</h2>
+        Rodzaj paliwa (1-benzyna, 2-olej napędowy):<br>
+       <input type="number" name="" id="rodzaj"><br>
+       Ile litrów? <br>
+       <input type="number" name="" id="ilosc" value=""><br>
+       <input type="button" value="OBLICZ" onclick="oblicz()">
+       <p id="wynik"></p>
+
+    </div>
+
+    <div id="prawy">
+        <img src="samochod.png" alt="samochód" id="car">
+    </div>
+    <footer>
+        <p>Stronę opracował: PESEL</p>
+    </footer>
+
+    <script>
+            function oblicz(){
+                let rodzaj = document.getElementById("rodzaj").value 
+                let ilosc = document.getElementById("ilosc").value
+                let koszt = 0;
+
+                if (rodzaj == 1){
+                    koszt = ilosc * 4;
+                }
+                if (rodzaj == 2){
+                    koszt = ilosc * 3.5;
+                }
+                if (rodzaj != 1 && rodzaj != 2){
+                    koszt = 0;
+                }
+
+                document.getElementById("wynik").innerHTML = "koszt paliwa: " + koszt + "zł";
+            } 
+    </script>
+
+
+</body>
+</html>

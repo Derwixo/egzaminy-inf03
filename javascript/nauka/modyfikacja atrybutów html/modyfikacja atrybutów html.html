@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styl3.css">
+    <title>Nagroda</title>
+</head>
+<body>
+   <h1>Wybierz swoją nagrodę</h1>
+   <img src="" alt="" id="nagroda">
+   <button id="laptop" onclick="laptop()">LAPTOP</button>
+   <button id="iphone" onclick="iphone()">IPHONE</button>
+   <button id="lodowka" onclick="lodowka()">LODÓWKA</button>
+
+
+</body>
+<script>
+
+        function laptop(){
+            document.getElementById("nagroda").src = "laptop.png";
+            document.getElementById("nagroda").alt = "laptop";
+        }
+        function iphone(){
+            document.getElementById("nagroda").src = "iphone15.png";
+            document,getElementById("nagroda").alt = "iphone";
+        }
+        function lodowka(){
+            document.getElementById("nagroda").src = "lodówka.jpg";
+            document.getElementById("nagroda").alt = "lodowka";
+        }
+  
+
+</script>
+</html>
+
+<!-- 
+
+TUTORIAL:
+
+W zależności od naciśniętego przycisku, ustaw dla zdjęcia o id nagroda:
+- gdy przycisk laptop, obraz laptop.jpg oraz tekst alternatywny "laptop"
+- gdy przycisk iphone, obraz iphone.jpg oraz tekst alternatywny "iphone"
+- gdy przycisk lodówka, obraz lodówka.jpg oraz tekst alternatywny "lodówka"
+
+
+
+a. html
+- img src="" alt="" id="nagroda">
+- button onClick="laptop()"
+
+b. js
+document.src
+document.alt 
+
+
+1. HTML 
+a. tworzysz img z id "nagroda"
+b. Tworzysz buttony z id odpowiadającym przedmiotowi z atrybutem onclick
+
+2. JS 
+a. tworzysz funkcje z nazwami z atrybutu "onclick" np. iphone, laptop, lodówka 
+b. w nawiasie w document.getelement(...) wpisujesz id z img 
+b. dodajesz atrybuty .src i .alt
+
+
+ -->
+
+
+<!-- 
+
+ function oblicz() {
+        let rodzaj = document.getElementById("rodzaj").value;
+        let ilosc = document.getElementById("ilosc").value;
+        let koszt = 0;
+        if (rodzaj == 1) {
+            koszt = ilosc * 4;
+        }
+        if (rodzaj == 2) {
+            koszt = ilosc * 3.5;
+        }
+        if (rodzaj != 1 && rodzaj != 2) {
+            koszt = 0;
+        }
+
+        document.getElementById("wynik").innerHTML = "koszt paliwa: " + koszt + " zł";
+    }
+
+
+ -->
