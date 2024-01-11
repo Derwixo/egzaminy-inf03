@@ -1,0 +1,18 @@
+//1. 
+SELECT czas, kierunek, nr_rejsu, status_lotu FROM przyloty ORDER BY czas ASC
+//2. Zliczające przyloty, które odbyły się w godzinach 10:00 - 10:59
+SELECT COUNT(*) FROM przyloty WHERE czas BETWEEN '10:00' AND '10:59'
+
+//3. Mój zły sposób
+SELECT przyloty.nr_rejsu, samoloty.typ 
+FROM przyloty, samoloty, odloty
+WHERE przyloty.kierunek = 'Warszawa'
+AND przyloty.samoloty_id = samoloty.id
+and samoloty.id = odloty.samoloty_id;
+
+//ten dobry z inner joinem
+
+SELECT przyloty.nr_rejsu, samoloty.typ FROM `przyloty` 
+INNER JOIN samoloty ON przyloty.samoloty_id = samoloty.id WHERE przyloty.kierunek = 'Warszawa';
+
+//4. UPDATE odloty set status_lotu = 'opoznienie 20 min' WHERE odloty.id = 5;
