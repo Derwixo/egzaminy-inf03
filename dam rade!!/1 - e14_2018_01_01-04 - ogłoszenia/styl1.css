@@ -1,0 +1,55 @@
+/* niewymierne własności przyjmują wartości domyślne */
+
+body {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#baner {
+    background-color: #40271A;
+    color: white;
+    font-family: Tahoma;
+    text-align: center;
+    height: 80px;
+    
+}
+
+#lewy {
+    background-color: #DBB29C;
+    width: 40%;
+    height: 700px;
+    float: left;
+
+}
+
+#prawy {
+    background-color: #FFE3D4;
+    width: 60%;
+    height: 700px;
+    float: left;
+}
+
+footer {
+    background-color: #40271A;
+    color: white;
+    text-align: right;
+    clear: both;
+}
+
+table, td {
+    border: 1px dashed brown;
+    width: 500px;
+    margin: 10px;
+    text-align: center;
+}
+
+img {
+    padding: 30px;
+}
+/* styl punktora cyfry rzymskie wielkie */
+ol {
+    list-style: upper-roman;
+}
+h1 {
+    margin: 0px;
+}
