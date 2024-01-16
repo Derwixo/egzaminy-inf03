@@ -1,0 +1,7 @@
+1.SELECT id, cel, cena FROM `wycieczki` where dostepna = 0;
+2. SELECT nazwaPliku, podpis FROM `zdjecia` 
+ORDER by podpis DESC;
+3. SELECT zdjecia.podpis, wycieczki.cena, wycieczki.cel FROM zdjecia 
+INNER JOIN wycieczki ON wycieczki.zdjecia_id = zdjecia.id 
+WHERE wycieczki.cena < 1200;
+4. ALTER TABLE wycieczki drop column dataWyjazdu;
